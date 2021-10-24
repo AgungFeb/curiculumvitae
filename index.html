@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas 4 - Curriculum Vitae</title>
+    <title>Tugas 4 - CV</title>
     <style>
         body{
             font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(252, 245, 237);
         }
         h1{
             text-align: center;
@@ -33,6 +34,29 @@
         }
         p{
             text-align: justify;
+        }
+    </style>
+    <style>    
+        progress {
+            border: none;
+            height: 12px;
+        }
+        progress.word::-webkit-progress-value, progress.html::-webkit-progress-value {
+        background: rgb(74, 150, 248);
+        border-radius: 8px;
+        }
+        progress.excel::-webkit-progress-value, progress.css::-webkit-progress-value {
+        background: rgb(53, 167, 53);
+        border-radius: 8px;
+        }
+        progress.ppt::-webkit-progress-value, progress.php::-webkit-progress-value {
+        background: rgb(255, 123, 0);
+        border-radius: 8px;
+        }
+        
+        progress::-webkit-progress-bar {
+        background: silver;
+        border-radius: 8px;
         }
     </style>
 </head>
@@ -76,12 +100,12 @@
             </table>
             <hr/>
             <h3>Riwayat Pendidikan</h3>
-            <p>
-                - TK Kartika (2005 - 2007) <br>
-                - SDN 1 Karangbendo (2007 - 2013) <br>
-                - SMPN 2 Rogojampi (2013 - 2016) <br>
-                - SMKN 1 Banyuwangi (2016 - 2019) 
-            </p>
+            <ul>
+                <li>TK Kartika (2005 - 2007)</li>
+                <li>SDN 1 Karangbendo (2007 - 2013)</li>
+                <li>SMPN 2 Rogojampi (2013 - 2016)</li>
+                <li>SMKN 1 Banyuwangi (2016 - 2019)</li>
+            </ul>
             <hr/>
             <figure>
                 <h3>Pengalaman Organisasi</h3>
@@ -91,8 +115,18 @@
             <p>Pernah menjadi anggota OSIS SMP Negeri 2 Rogojampi selama 2 periode yakni pada tahun 2013 - 2015, saat kelas 7 dan 8 SMP</p>
             <hr/>
             <h3>Hard Skill</h3>
-            <p><strong>Menguasai Microsoft Office</strong> - Bekerja sebagai staff administrasi instansi</p>
-            <p><strong>Mengolah Data</strong> - Terbiasa melakukan pekerjaan yang berhubungan dengan data</p>
+            <strong>Microsoft Office</strong>
+            <ul>
+                <li>Word<progress class="word" value="75" max="100" style="margin-left:10px;"></progress></li>
+                <li>Excel <progress class="excel" value="80" max="100" style="margin-left:9px;"></progress></li>
+                <li>PPT <progress class="ppt" value="75" max="100" style="margin-left:18px;"></progress></li>
+            </ul>      
+            <p><strong>Pemrograman</strong></p>
+            <ul>
+                <li>HTML<progress class="html" value="80" max="100" style="margin-left:8px;"></progress></li>
+                <li>CSS<progress class="css" value="70" max="100" style="margin-left:23px;"></progress></li>
+                <li>PHP<progress class="php" value="65" max="100" style="margin-left:20px;"></progress></li>
+            </ul>
         </article>           
     </main>
 </body>
