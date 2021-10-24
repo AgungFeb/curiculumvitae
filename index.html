@@ -16,6 +16,7 @@
         img{
             width: 20%;
             margin-left: 40%;
+            border-radius: 10px;
         }
         figcaption{
             text-align: center;
@@ -35,28 +36,32 @@
         p{
             text-align: justify;
         }
-    </style>
-    <style>    
+        table{
+            width: 100%;
+            border-radius: 3px;
+        }
+        td.no, td.tahun{
+            text-align: center;
+        }
         progress {
             border: none;
             height: 12px;
         }
         progress.word::-webkit-progress-value, progress.html::-webkit-progress-value {
-        background: rgb(74, 150, 248);
-        border-radius: 8px;
+            background: rgb(74, 150, 248);
+            border-radius: 8px;
         }
         progress.excel::-webkit-progress-value, progress.css::-webkit-progress-value {
-        background: rgb(53, 167, 53);
-        border-radius: 8px;
+            background: rgb(53, 167, 53);
+            border-radius: 8px;
         }
         progress.ppt::-webkit-progress-value, progress.php::-webkit-progress-value {
-        background: rgb(255, 123, 0);
-        border-radius: 8px;
+            background: rgb(255, 123, 0);
+            border-radius: 8px;
         }
-        
         progress::-webkit-progress-bar {
-        background: silver;
-        border-radius: 8px;
+            background: silver;
+            border-radius: 8px;
         }
     </style>
 </head>
@@ -71,7 +76,7 @@
         </header>
         <article>
             <h3>Data Diri</h3>
-            <table>
+            <table cellpading="5">
                 <tr>
                     <td>Nama</td>
                     <td>:</td>
@@ -100,12 +105,34 @@
             </table>
             <hr/>
             <h3>Riwayat Pendidikan</h3>
-            <ul>
-                <li>TK Kartika (2005 - 2007)</li>
-                <li>SDN 1 Karangbendo (2007 - 2013)</li>
-                <li>SMPN 2 Rogojampi (2013 - 2016)</li>
-                <li>SMKN 1 Banyuwangi (2016 - 2019)</li>
-            </ul>
+            <table border="1px" cellpadding="5">
+                <tr>
+                    <th>No</th>
+                    <th>Jenjang Pendidikan</th>
+                    <th>Tahun</th>
+                </tr>
+                <tr>
+                    <td class="no">1</td>
+                    <td>TK Kartika</td>
+                    <td class="tahun">(2005 - 2007)</td>
+                </tr>
+                <tr>
+                    <td class="no">2</td>
+                    <td>SDN 1 Karangbendo</td>
+                    <td class="tahun">(2007 - 2013)</td>
+                </tr>
+                <tr>
+                    <td class="no">3</td>
+                    <td>SMPN 2 Rogojampi</td>
+                    <td class="tahun">(2013 - 2016)</td>
+                </tr>
+                <tr>
+                    <td class="no">4</td>
+                    <td>SMKN 1 Banyuwangi</td>
+                    <td class="tahun">(2016 - 2019)</td>
+                </tr>
+            </table>
+            <br>
             <hr/>
             <figure>
                 <h3>Pengalaman Organisasi</h3>
